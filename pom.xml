@@ -5,7 +5,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>  <!-- Keep SNAPSHOT for development builds -->
     <packaging>jar</packaging>
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
@@ -39,11 +39,19 @@
     </build>
 
     <distributionManagement>
+        <!-- Releases go to maven-releases -->
         <repository>
             <id>maven-releases</id>
             <url>http://65.2.129.203:8081/repository/maven-releases/</url>
         </repository>
+        
+        <!-- SNAPSHOT builds go to maven-snapshots -->
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>http://65.2.129.203:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 
 </project>
+
 
