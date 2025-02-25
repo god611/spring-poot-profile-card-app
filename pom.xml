@@ -42,13 +42,13 @@
         <!-- Releases go to maven-releases -->
         <repository>
             <id>maven-releases</id>
-            <url>http://65.2.129.203:8081/repository/maven-releases/</url>
+            <url>http://13.232.221.38:8081/repository/maven-releases/</url>
         </repository>
         
         <!-- SNAPSHOT builds go to maven-snapshots -->
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://65.2.129.203:8081/repository/maven-snapshots/</url>
+            <url>http://13.232.221.38:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
